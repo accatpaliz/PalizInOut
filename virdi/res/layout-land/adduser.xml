@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userbackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/searchtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchtextView1"
+        android:layout_below="@+id/searchtextView1"
+        android:layout_marginTop="36dp"
+        android:text="Surname" />
+
+    <TextView
+        android:id="@+id/searchtextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchtextView2"
+        android:layout_below="@+id/searchtextView2"
+        android:layout_marginTop="40dp"
+        android:text="No." />
+
+    <TextView
+        android:id="@+id/searchtextView1"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.04"
+        android:text="Given Name :"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/clearlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignTop="@+id/add"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/close" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/n7"
+        android:layout_toRightOf="@+id/add" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/searchtextView2"
+        android:background="@drawable/keypadok" />
+
+    <EditText
+        android:id="@+id/givenname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/searchtextView1"
+        android:layout_alignBottom="@+id/searchtextView1"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/searchtextView1"
+        android:ems="10"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/searchtextView2"
+        android:layout_alignBottom="@+id/searchtextView2"
+        android:layout_alignLeft="@+id/givenname"
+        android:ems="10"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchtextView3"
+        android:layout_alignLeft="@+id/surname"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="numberDecimal" />
+
+   <requestFocus />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clearlist"
+        android:layout_alignBottom="@+id/clearlist"
+        android:layout_alignRight="@+id/surname"
+        android:background="@drawable/righticon" />
+
+</RelativeLayout>

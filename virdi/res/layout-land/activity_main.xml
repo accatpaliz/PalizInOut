@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userbackground"
+    tools:context="com.example.virdi.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/imageButton5"
+        android:layout_alignBottom="@+id/imageButton5"
+        android:layout_alignParentLeft="true"
+        android:drawableTop="@drawable/adduser"
+        android:text="ADD USER"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:drawableTop="@drawable/show"
+        android:text="SHOW"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="76dp"
+        android:drawableTop="@drawable/edit"
+        android:text="EDIT"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="41dp"
+        android:layout_toLeftOf="@+id/imageButton4"
+        android:drawableTop="@drawable/deleteall"
+        android:text="DELETE ALL"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
